@@ -2,8 +2,8 @@ public class Calculadora {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int opcion = 0;
-		int res = 0;
-		String respuesta="";
+		float res = 0;
+		String respuesta = "";
 		
 		do {
 			System.out.println("Elige una operacion para hacer:");
@@ -14,9 +14,9 @@ public class Calculadora {
 			opcion = sc.nextInt();
 			
 			System.out.println("Introduce el primer numero con el que vas a operar:");
-			int n1 = sc.nextInt();
+			float n1 = sc.nextFloat();
 			System.out.println("Introduce el segundo numero con el que vas a operar:");
-			int n2 = sc.nextInt();
+			float n2 = sc.nextFloat();
 			
 			switch(opcion) {
 			case 1:
@@ -50,23 +50,23 @@ public class Calculadora {
 		} while(respuesta.equalsIgnoreCase("S"));
 	}
 		
-	public static int suma(int n1, int n2) {
-		int res = n1 + n2;
+	public static float suma(int n1, int n2) {
+		float res = n1 + n2;
 		return res;
 	}
 		
-	public static int resta(int n1, int n2) {
-		int res = n1 - n2;
+	public static float resta(int n1, int n2) {
+		float res = n1 - n2;
 		return res;
 	}
 		
-	public static int multiplicar(int n1, int n2) {
-		int res = n1 * n2;
+	public static float multiplicar(int n1, int n2) {
+		float res = n1 * n2;
 		return res;
 	}
 		
-	public static int dividir(int n1, int n2) {
-		int res = n1 / n2;
+	public static float dividir(int n1, int n2) {
+		float res = n1 / n2;
 		return res;
 	}
 }
