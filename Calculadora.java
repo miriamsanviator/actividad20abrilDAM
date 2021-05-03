@@ -3,7 +3,7 @@ public class Calculadora {
 		Scanner sc = new Scanner(System.in);
 		int opcion = 0;
 		float res = 0;
-		String respuesta = "";
+		String respuesta = null;
 		
 		do {
 			System.out.println("Elige una operacion para hacer:");
